@@ -6,6 +6,12 @@ pub struct Metadata {
     pub description: Option<String>,
 }
 
+impl Default for Metadata {
+    fn default() -> Self {
+        Self { label: String::new(), description: None }
+    }
+}
+
 #[derive(Clone, Serialize, Deserialize, Debug)]
 pub struct SearchResult {
     pub id: usize,

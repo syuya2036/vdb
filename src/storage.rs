@@ -21,6 +21,7 @@ pub struct StoredEntry {
     pub id: usize,
     pub vector: Vec<f32>,
     pub metadata: Metadata,
+    pub deleted: bool,
 }
 
 pub struct Storage {
