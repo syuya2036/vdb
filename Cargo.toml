@@ -1,7 +1,7 @@
 [package]
 name = "vdb"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
@@ -10,6 +10,9 @@ hnsw = "0.11"
 rand_pcg = "0.3"
 anyhow = "1"
 space = "0.17"
+ordered-float = "4"
+rayon = "1"
+clap = { version = "4", features = ["derive"] }
 
 [dev-dependencies]
 criterion = "0.5"
